@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.LoginTest"/>
+    </classes>
+  </test> <!-- test -->
+  <test thread-count="5" name="firefoxTest">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testCases.LoginTest"/>
+    </classes>
+  </test> <!-- firefoxTest -->
+</suite> <!-- Failed suite [Suite] -->

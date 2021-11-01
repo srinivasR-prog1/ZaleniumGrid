@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26186" started-at="2021-10-29T17:00:12Z" finished-at="2021-10-29T17:00:38Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="12070" started-at="2021-10-29T17:00:12Z" finished-at="2021-10-29T17:00:24Z">
+      <class name="testCases.LoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testCases.LoginTest@2b4c3c29]" name="setUp" is-config="true" duration-ms="4413" started-at="2021-10-29T22:30:12Z" finished-at="2021-10-29T22:30:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testCases.LoginTest@2b4c3c29]" name="loginTest" duration-ms="7578" started-at="2021-10-29T22:30:16Z" finished-at="2021-10-29T22:30:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.LoginTest@2b4c3c29]" name="tearDown" is-config="true" duration-ms="70" started-at="2021-10-29T22:30:24Z" finished-at="2021-10-29T22:30:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginTest -->
+    </test> <!-- test -->
+    <test name="firefoxTest" duration-ms="14094" started-at="2021-10-29T17:00:24Z" finished-at="2021-10-29T17:00:38Z">
+      <class name="testCases.LoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testCases.LoginTest@1e9804b9]" name="setUp" is-config="true" duration-ms="5784" started-at="2021-10-29T22:30:24Z" finished-at="2021-10-29T22:30:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testCases.LoginTest@1e9804b9]" name="loginTest" duration-ms="7793" started-at="2021-10-29T22:30:30Z" finished-at="2021-10-29T22:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.LoginTest@1e9804b9]" name="tearDown" is-config="true" duration-ms="517" started-at="2021-10-29T22:30:38Z" finished-at="2021-10-29T22:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginTest -->
+    </test> <!-- firefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>
