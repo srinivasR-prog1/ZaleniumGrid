@@ -42,7 +42,9 @@ public class LoginTest {
 			dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
 
 		}
-		URL url = new URL("http://localhost:4444/wd/hub");
+//		URL url = new URL("http://localhost:4444/wd/hub");
+		URL url = new URL("http://172.19.0.2:4445/wd/hub");
+		
 		driver = new RemoteWebDriver(url, dc);
 		driver.manage().window().maximize();
 		driver.get("https://demo.guru99.com/v4/index.php");
