@@ -1,11 +1,11 @@
 pipeline {
     agent any    
-    stages {            
-                  
+    stages {       
+                 
        
             stage ('Start Zalenium'){
                 steps{
-                    bat 'docker-compose up'
+                    bat 'docker run --rm -ti --name zalenium -p 4444:4444 -v /var/run/docker.sock:/var/run/docker.sock -v /C/Users/ZaleniumVideos:/Users/ZaleniumVideos --privileged dosel/zalenium start'
                 }
             }
             stage ('Run Tests'){
@@ -15,7 +15,7 @@ pipeline {
             }
             stage ('Stop Zalenium'){
                 steps{
-                    bat 'docker-compose down'
+                    bat 'docker stop zalenium'
                 }
             }
     }
