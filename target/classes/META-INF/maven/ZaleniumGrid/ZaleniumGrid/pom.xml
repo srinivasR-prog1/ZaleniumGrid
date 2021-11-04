@@ -57,7 +57,8 @@
 			<artifactId>testng</artifactId>
 			<version>6.9.10</version>
 			<scope>test</scope>
-		</dependency>
+		</dependency>		
+
 
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
@@ -65,6 +66,10 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>4.0.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/anything-goes-formatter -->
+		
+
+
 
 	</dependencies>
 </project>
