@@ -66,8 +66,7 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>4.0.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/anything-goes-formatter -->
-		
+		<!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/anything-goes-formatter -->	
 
 
 
