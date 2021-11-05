@@ -45,8 +45,8 @@ public class LoginTest {
 		URL url = new URL("http://localhost:4444/wd/hub");
 		
 		
-	//	driver = new RemoteWebDriver(url, dc);
-		driver = new RemoteWebDriver(url, options);
+		driver = new RemoteWebDriver(url, dc);
+	
 		driver.manage().window().maximize();
 		driver.get("https://demo.guru99.com/v4/index.php");
 

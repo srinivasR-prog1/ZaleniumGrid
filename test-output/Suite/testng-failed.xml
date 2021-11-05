@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="browser1" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
   <test thread-count="5" name="test">
     <parameter name="browser" value="chrome"/>
-    <parameter name="browser1" value="firefox"/>
     <classes>
-      <class name="testCases.Setup_dockergrid"/>
       <class name="testCases.LoginTest"/>
-      <class name="testCases.Setup_dockergrid1"/>
     </classes>
   </test> <!-- test -->
-  <test name="test(failed)" parallel="classes">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="browser1" value="firefox"/>
+  <test thread-count="5" name="firefoxTest">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testCases.LoginTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- testCases.LoginTest -->
+      <class name="testCases.LoginTest"/>
     </classes>
-  </test> <!-- test(failed) -->
+  </test> <!-- firefoxTest -->
 </suite> <!-- Failed suite [Suite] -->
