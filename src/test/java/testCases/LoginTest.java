@@ -42,7 +42,7 @@ public class LoginTest {
 			dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
 
 		}
-		URL url = new URL("http://172.18.144.1:4444/wd/hub");
+		URL url = new URL("http://localhost:4444/wd/hub");
 		
 		
 		driver = new RemoteWebDriver(url, dc);
