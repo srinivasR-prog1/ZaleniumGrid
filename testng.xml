@@ -4,6 +4,7 @@
 	<test thread-count="5" name="test">
 		<parameter name="browser" value="chrome" />
 		<classes>
+		<class name="testCases.Setup_dockerGridBefore" />
 			<class name="testCases.LoginTest" />
 		</classes>
 	</test>
@@ -11,6 +12,7 @@
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="testCases.LoginTest" />
+			<class name="testCases.Setup_dockerGridAfter" />
 		</classes>
 	</test>
 </suite> 
