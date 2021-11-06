@@ -3,16 +3,14 @@
 <suite name="Suite">	
 	<test thread-count="5" name="test">
 		<parameter name="browser" value="chrome" />
-		<classes>
-		<class name="testCases.Setup_dockerGridBefore" />
+		<classes>		
 			<class name="testCases.LoginTest" />
 		</classes>
 	</test>
 	<test thread-count="5" name="firefoxTest">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="testCases.LoginTest" />
-			<class name="testCases.Setup_dockerGridAfter" />
+			<class name="testCases.LoginTest" />			
 		</classes>
 	</test>
 </suite> 
