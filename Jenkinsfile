@@ -1,13 +1,7 @@
 pipeline {
     agent any    
-    stages {         
-                          
-       
-            stage ('Start Zalenium'){
-                steps{
-                    bat 'docker-compose up'
-                }
-            }
+    stages {    
+                               
             stage("Setup IFrame") {
             steps {
                 script {
@@ -27,10 +21,6 @@ pipeline {
                 }
             }
         }        
-            stage ('Stop Zalenium'){
-                steps{
-                    bat 'docker-compose down'
-                }
-            }
+           
     }
 }
